@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Managers : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private static Managers s_instance;
+    private static Managers Instance { get { Init(); return s_instance; } }
 
-    // Update is called once per frame
-    void Update()
+    public static void Init()
     {
-        
+        if (s_instance == null)
+        {
+            GameObject go = GameObject.Find("@Managers");
+            if (go == null)
+            {
+                go = new GameObject { name = "@Manangers" };
+                go.AddComponent<Managers>();
+            }
+
+            DontDestroyOnLoad(go);
+
+            //초기화
+            s_instance = go.GetComponent<Managers>();
+        }
     }
 }
