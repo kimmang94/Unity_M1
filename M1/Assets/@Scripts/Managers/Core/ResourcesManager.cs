@@ -7,7 +7,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 using Object = UnityEngine.Object;
 public class ResourcesManager
 {
-    private Dictionary<string, UnityEngine.Object> _resources = new Dictionary<string, Object>();
+    private Dictionary<string, Object> _resources = new Dictionary<string, Object>();
     private Dictionary<string, AsyncOperationHandle> _handle =  new Dictionary<string, AsyncOperationHandle>();
 
     #region Load Resource
@@ -56,6 +56,7 @@ public class ResourcesManager
     }
 
     #endregion
+
     #region Addressable
     private void LoadAsync<T>(string key, Action<T> callback = null) where T : UnityEngine.Object
     {
@@ -81,7 +82,7 @@ public class ResourcesManager
         }
     }
 
-    public void LoadAllAsync<T>(string label, Action<string, int, int> callback) where T : UnityEngine.Object
+    public void LoadAllAsync<T>(string label, Action<string, int, int> callback) where T : Object
     {
         var opHandle = Addressables.LoadResourceLocationsAsync(label, typeof(T));
         opHandle.Completed += (op) =>

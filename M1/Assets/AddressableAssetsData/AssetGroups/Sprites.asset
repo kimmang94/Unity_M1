@@ -16,22 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: c0ad496eb5bf5f24b9fe77a0c54ec17e
-  m_SerializeEntries:
-  - m_GUID: 9e9a97fa10743de468e835b553974a09
-    m_Address: Object_Firewood
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9456dad1f5957414ab37f3ac1e8f980e
-    m_Address: Object_Meat
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 70c47d429c75ad8489dfb257e05d1640
-    m_Address: Object_Mineral
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f33c2a56079ecba44b6a4081f66fb16e, type: 2}
   m_SchemaSet:

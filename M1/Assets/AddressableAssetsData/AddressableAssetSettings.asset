@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: f68ce692398d26f4f8a65e30da19f0b0
   m_currentHash:
     serializedVersion: 2
-    Hash: 024c6597d712dab5ea5899523320a235
+    Hash: d79241699fc6e8ccf0000cb2022d2185
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -63,9 +63,9 @@ MonoBehaviour:
       - m_Id: 02a5712a9dee8844f8eaa0ad44174cc5
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: 963af88d7c8a60f45a703d50e5d47052
-        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+        m_Value: ServerData/[BuildTarget]
       - m_Id: 71c3cb50a13c67f45806cdbb1dc92560
-        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+        m_Value: ServerData/[BuildTarget]
       - m_Id: b0c7904b6934ca546b621e00f3de77e9
         m_Value: ServerData/[BuildTarget]
       - m_Id: 2c2bdd01c7ff7a145a6bcfb335bd80f8
@@ -104,6 +104,7 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
+    - PreLoad
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 85bc3961903a30d4c9fb0eec92242b12, type: 2}
